@@ -1,0 +1,30 @@
+#upper{
+	text-align: center;
+	background: rgb(0,135,81);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+
+}
+
+#upper img{
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+#search{
+	text-align: center;
+}
+
+#lower {
+	background: rgb(0,163,221);
+	position: absolute;
+	top: 100%;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+
+}
