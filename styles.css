@@ -4,19 +4,44 @@ body{
 
 #upper{
 	text-align: center;
+  font-family: 'Open Sans', sans-serif;
 	background: rgb(129,163,163);
 	position: absolute;
 	height: calc(100% - 50px);
 	width: 100%;
 }
 
-#upper img{
-	padding-top: 60px;
-	padding-bottom: 20px;
+#search{
+	background: rgb(197,212,202);
+  color: rgb(55,56,51);
+  position: relative;
+  top: 20%;
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 15px 20px 15px;
 }
 
-#search{
-	text-align: center;
+#search h3 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.form-top {
+  margin-bottom: 20px;
+}
+
+.btn {
+  height: 36px;
+  width: 100px;
+  background: rgb(98,159,66);
+  color: rgb(197,212,202);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 10px 0px #333;
+  font-size: 20px;
 }
 
 #lower {
@@ -62,10 +87,12 @@ input{
 
 .about h3 {
   font-size: 25px;
+  font-family: 'Lora', serif;
 }
 
 .about p {
   font-size: 19px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .about:last-child img {
@@ -128,6 +155,7 @@ footer {
 footer a {
   color: rgb(55,56,51);
   text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
