@@ -2,7 +2,7 @@ body{
 	margin: 0px;
 }
 
-#upper{
+.upper{
 	text-align: center;
   font-family: 'Open Sans', sans-serif;
 	background: rgb(129,163,163);
@@ -11,7 +11,7 @@ body{
 	width: 100%;
 }
 
-#search{
+.search{
 	background: rgb(197,212,202);
   color: rgb(55,56,51);
   position: relative;
@@ -24,13 +24,26 @@ body{
   padding: 20px 15px 20px 15px;
 }
 
-#search h3 {
+.search-title {
   margin-top: 0px;
   margin-bottom: 30px;
 }
 
-.form-top {
-  margin-bottom: 20px;
+.form-depart {
+  float: left;
+}
+
+.form-zip {
+  float: right;
+}
+
+.form-drive {
+  float: left;
+  display: block;
+}
+
+.form-nights {
+  float:left;
 }
 
 .btn {
@@ -44,7 +57,7 @@ body{
   font-size: 20px;
 }
 
-#lower {
+.lower {
 	background: rgb(98,159,66);
 	position: absolute;
   padding-bottom: 45px;
