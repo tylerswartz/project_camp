@@ -2,6 +2,20 @@ body{
 	margin: 0px;
 }
 
+header {
+  height: 50px;
+  background: rgb(98,159,66);
+  margin-top: 0px;
+}
+
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  margin-top: 0px;
+  padding-top: 13px;
+  padding-left: 20px;
+}
+
 .upper{
   font-family: 'Open Sans', sans-serif;
 	background: rgb(129,163,163);
@@ -15,7 +29,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   color: rgb(55,56,51);
-  margin-top: 83px;
+  margin-top: 42px;
 }
 
 .search{
