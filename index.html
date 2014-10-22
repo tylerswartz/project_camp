@@ -21,29 +21,29 @@
 				<div class="search-form-wrap">
 					<form action="#" method="post" class="form" id="camp-search">
 						<div class="form-depart">
-							<div class="depart-label">
+							<div class="form-depart-label">
 								<label for="date">Depart</label>
 							</div>
-							<div class="depart-input">
-								<input type="date" class="input-small" placeholder="Date" required>
+							<div class="form-depart-input">
+								<input type="date" class="depart-input" placeholder="Date" required>
 							</div>
 						</div>
 
 						<div class="form-zip">
-							<div class="zip-label">
+							<div class="form-zip-label">
 								<label for="zipcode">Your Zip</label>
 							</div>
-							<div class="zip-input">
-								<input type="text" class="input-small" placeholder="e.g. 90210" required>
+							<div class="form-zip-input">
+								<input type="text" class="zip-input" placeholder="e.g. 90210" required>
 							</div>
 						</div>
 
 						<div class="form-drive">
-							<div class="drive-label">
+							<div class="form-drive-label">
 								<label for="drive-time">Drive Time</label>
 							</div>
-							<div class="drive-input">
-								<select>
+							<div class="form-drive-input">
+								<select class="drive-input">
 									<option value="1">1 hour</option>
 									<option value="2">2 hours</option>
 									<option value="3">3 hours</option>
@@ -55,10 +55,10 @@
 						</div>
 						
 						<div class="form-nights">
-							<div class="nights-label">
+							<div class="form-nights-label">
 								<label for="nights">Nights</label>
 							</div>
-							<div class="nights-input">
+							<div class="form-nights-input">
 								<select>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -70,6 +70,8 @@
 								</select>
 							</div>
 						</div>
+
+						<input type="submit" name="search" value="Search" id="search-btn"/>
 					</form>
 				</div>
 			</div>
