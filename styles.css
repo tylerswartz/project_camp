@@ -3,18 +3,26 @@ body{
 }
 
 header {
-  height: 50px;
-  background: rgb(55,56,51);
+  height: 55px;
+  background: rgb(140,119,88);
   margin-top: 0px;
+}
+
+header img {
+  margin-left: 20px;
+  padding-top: 6px;
+  width: 40px;
+  height: 40px;
+  float: left;
 }
 
 header h1 {
   font-family: 'Open Sans', sans-serif;
   color: rgb(197,212,202);
   font-size: 18px;
-  margin-top: 0px;
-  padding-top: 13px;
-  padding-left: 20px;
+  margin-top: 16px;
+  padding-left: 9px;
+  display: inline-block;
 }
 
 .upper{
@@ -96,7 +104,7 @@ header h1 {
   width: 200px;
   margin-top: 22px;
   margin-right: 6px;
-  background: rgb(55,56,51);
+  background: rgb(140,119,88);
   color: rgb(197,212,202);
   border-radius: 5px;
   border: none;
@@ -105,7 +113,7 @@ header h1 {
 }
 
 .lower {
-	background: rgb(115,125,88);
+	background: rgb(140,119,88);
 	position: absolute;
   padding-bottom: 45px;
 	top: calc(100% - 50px);
@@ -185,7 +193,7 @@ input{
   height: 0px;
   border-style: solid;
   border-width: 3em 3em 0 3em;
-  border-color: rgb(98,159,66) transparent transparent transparent;
+  border-color: rgb(140,119,88) transparent transparent transparent;
   -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
 }
 
