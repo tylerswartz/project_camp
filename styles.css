@@ -28,8 +28,10 @@ header h1 {
 .upper{
   font-family: 'Open Sans', sans-serif;
 	background: rgb(129,163,163);
-	position: absolute;
-	height: calc(100% - 50px);
+  position: relative;
+  height: auto;
+  padding-top: 1px;
+  padding-bottom: 10%;
 	width: 100%;
 }
 
@@ -45,10 +47,10 @@ header h1 {
 	background: rgb(197,212,202);
   color: rgb(55,56,51);
   position: relative;
-  top: 4%;
   width: 450px;
   height: 250px;
   border-radius: 10px;
+  margin-top: 27px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px 15px 20px 15px;
@@ -114,9 +116,8 @@ header h1 {
 
 .lower {
 	background: rgb(140,119,88);
-	position: absolute;
-  padding-bottom: 45px;
-	top: calc(100% - 50px);
+  position: relative;
+  padding-bottom: 85px;
 	width: 100%;
 }
 
@@ -135,7 +136,7 @@ input{
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: 65px;
   width: 70%;
   overflow: hidden;
   padding: 25px;
@@ -169,7 +170,7 @@ input{
 }
 
 .arrow-wrap {
-  position:absolute;
+  position: relative;
   z-index: 1;
   left: 50%;
   top: -38px;
@@ -221,15 +222,17 @@ input{
 
 footer {
   clear: both;
-  position: absolute;
-  background: rgb(197,212,202);
-  padding: 5px 15px 5px 15px;
-  margin-left: 10px;
+  position: relative;
+  background: rgb(129,163,163);
+  height: 25px;
+  margin: 0px;
+  padding: 15px;
 }
 
 footer a {
-  color: rgb(55,56,51);
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
+  color: rgb(55,56,51);
+  font-size: 18px;
 }
 
