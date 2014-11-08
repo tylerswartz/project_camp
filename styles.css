@@ -27,7 +27,8 @@ header h1 {
 
 .upper{
   font-family: 'Open Sans', sans-serif;
-	background: rgb(129,163,163);
+	background-image: url("images/plate39_hue.png");
+  /*background: rgb(129,163,163);*/
   position: relative;
   height: auto;
   padding-top: 1px;
