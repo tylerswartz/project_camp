@@ -39,14 +39,17 @@ header h1 {
 .headline {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: rgb(55,56,51);
   margin-top: 42px;
 }
 
 .search{
-	background: rgb(197,212,202);
-  color: rgb(55,56,51);
+	/*background: rgb(197,212,202);*/
+  background: rgb(140,119,88);
+  /*background: rgb(129,163,163);*/
+  /*color: rgb(55,56,51);*/
+  color: rgb(197,212,202);
   position: relative;
   width: 450px;
   height: 250px;
@@ -107,8 +110,10 @@ header h1 {
   width: 200px;
   margin-top: 22px;
   margin-right: 6px;
-  background: rgb(140,119,88);
-  color: rgb(197,212,202);
+  background: rgb(197,212,202);
+  color: rgb(140,119,88);
+  /*background: rgb(140,119,88);*/
+  /*color: rgb(197,212,202);*/
   border-radius: 5px;
   border: none;
   box-shadow: 0px 1px 4px 0px #333;
