@@ -27,6 +27,7 @@ $(document).ready(function() {
 		
 		$.get("https://d9d20ed6-bb51eeb318dd.my.apitools.com/?pstate=CA&siteType=2003&arvdate="+ date +"&lengthOfStay="+ nights + "&api_key=6gxhb929yg7ez8u3cr9mj9gj", function(response) { 
    		console.log(response);
+   		console.log($.xml2json(response));
 		});
 
 
