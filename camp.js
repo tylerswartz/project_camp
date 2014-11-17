@@ -3,6 +3,8 @@ var date_input;
 var date;
 var nights;
 var results;
+var locations = [];
+var arr;
 
 $(document).ready(function() {
 		
@@ -28,21 +30,32 @@ $(document).ready(function() {
 		console.log(nights);
 		
 		//query api and convert from xml to json
-		// $.get("https://d9d20ed6-bb51eeb318dd.my.apitools.com/?pstate=CA&siteType=2003&arvdate="+ date +"&lengthOfStay="+ nights + "&api_key=6gxhb929yg7ez8u3cr9mj9gj", function(response) { 
-  //  		results = $.xml2json(response);
-  //  		console.log(results);
-  //  		for (var i=0; i < 2; i++){
-  //       console.log(results.result[i].latitude);
-  //       console.log(results.result[i].longitude);
-  //     };
-		// });
+		$.get("https://d9d20ed6-bb51eeb318dd.my.apitools.com/?pstate=CA&siteType=2003&arvdate="+ date +"&lengthOfStay="+ nights + "&api_key=6gxhb929yg7ez8u3cr9mj9gj", function(response) { 
+   		results = $.xml2json(response);
+   		console.log(results);
+   		for (var i=0; i < 3; i++){
+        if (results.result[i].availabilityStatus === "Y") {
+        	console.log(results.result[i].facilityName);
+        	console.log(results.result[i].latitude);
+        	console.log(results.result[i].longitude);
+        	arr = [];
+        	arr.push(results.result[i].facilityName);
+        	arr.push(results.result[i].latitude);
+        	arr.push(results.result[i].longitude);
+        	locations.push(arr);
+        }
+
+        // console.log(results.result[i].latitude);
+        // console.log(results.result[i].longitude);
+      };
+		});
 
 		//test locations (will be returned from api call)
-		var locations = [
-			['BIG BASIN REDWOODS SP', 37.1852778, -122.2286111, 1],
-			['BOTHE-NAPA VALLEY SP', 38.5458333, -122.5344444, 2],
-			['CHINA CAMP SP', 38.0008333, -122.4605556, 3],
-		];
+		// var locations = [
+		// 	['BIG BASIN REDWOODS SP', 37.1852778, -122.2286111],
+		// 	['BOTHE-NAPA VALLEY SP', 38.5458333, -122.5344444],
+		// 	['CHINA CAMP SP', 38.0008333, -122.4605556],
+		// ];
 
 		//build map
 		var map = new google.maps.Map($("#map")[0], {
