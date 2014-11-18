@@ -36,6 +36,7 @@ $(document).ready(function() {
 			user_lng = (googleObject.results[0].geometry.location.lng);
 		});
 
+		//using delay to wait for geocode of zip before Get to campsite api
 		setTimeout(function(){
 			//query api and convert from xml to json
 	   	$.get("https://d9d20ed6-bb51eeb318dd.my.apitools.com/?landmarkName=true&landmarkLat="+ user_lat +"&landmarkLong="+ user_lng +"&siteType=2003&arvdate="+ date +"&lengthOfStay="+ nights + "&api_key=6gxhb929yg7ez8u3cr9mj9gj", function(response) { 	
