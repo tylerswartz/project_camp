@@ -33,7 +33,7 @@ $(document).ready(function() {
 		$.get("https://d9d20ed6-bb51eeb318dd.my.apitools.com/?pstate=CA&siteType=2003&arvdate="+ date +"&lengthOfStay="+ nights + "&api_key=6gxhb929yg7ez8u3cr9mj9gj", function(response) { 
    		results = $.xml2json(response);
    		console.log(results);
-   		for (var i=0; i < 3; i++){
+   		for (var i=0; i < 10; i++){
         if (results.result[i].availabilityStatus === "Y") {
         	console.log(results.result[i].facilityName);
         	console.log(results.result[i].latitude);
@@ -48,30 +48,23 @@ $(document).ready(function() {
         // console.log(results.result[i].latitude);
         // console.log(results.result[i].longitude);
       };
-		});
 
-		//test locations (will be returned from api call)
-		// var locations = [
-		// 	['BIG BASIN REDWOODS SP', 37.1852778, -122.2286111],
-		// 	['BOTHE-NAPA VALLEY SP', 38.5458333, -122.5344444],
-		// 	['CHINA CAMP SP', 38.0008333, -122.4605556],
-		// ];
+      //build map
+      var map = new google.maps.Map($("#map")[0], {
+      	zoom: 8,
+      	center: new google.maps.LatLng(37.8311, -122.3855),
+      	mapTypeId: google.maps.MapTypeId.ROADMAP
+    	});
 
-		//build map
-		var map = new google.maps.Map($("#map")[0], {
-      zoom: 8,
-      center: new google.maps.LatLng(37.8311, -122.3855),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
+    	var infowindow = new google.maps.InfoWindow();
 
-    var infowindow = new google.maps.InfoWindow();
+    	//place markers at locations
+    	var marker, i;
 
-    var marker, i;
-
-    for (i = 0; i < locations.length; i++) {
-    	marker = new google.maps.Marker({
+    	for (i = 0; i < locations.length; i++) {
+    		marker = new google.maps.Marker({
     		position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-    			map: map
+    		map: map
     	});
 
     	google.maps.event.addListener(marker, 'click', (
@@ -82,8 +75,11 @@ $(document).ready(function() {
     		}
     	})(marker, i));
     }
- 
 
+
+		});
+
+		
 		return false;
 	});
 
