@@ -1,0 +1,252 @@
+body{
+	margin: 0px;
+}
+
+header {
+  height: 55px;
+  background: rgb(140,119,88);
+  margin-top: 0px;
+}
+
+header img {
+  margin-left: 20px;
+  padding-top: 6px;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(197,212,202);
+  font-size: 18px;
+  margin-top: 16px;
+  padding-left: 9px;
+  display: inline-block;
+}
+
+.upper{
+  font-family: 'Open Sans', sans-serif;
+	background-image: url("../images/plate39_hue.png");
+  /*background: rgb(129,163,163);*/
+  position: relative;
+  height: auto;
+  padding-top: 1px;
+  padding-bottom: 10%;
+	width: 100%;
+}
+
+.headline {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: rgb(55,56,51);
+  margin-top: 42px;
+}
+
+.search{
+	/*background: rgb(197,212,202);*/
+  background: rgb(140,119,88);
+  /*background: rgb(129,163,163);*/
+  /*color: rgb(55,56,51);*/
+  color: rgb(197,212,202);
+  position: relative;
+  width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-top: 27px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 15px 20px 15px;
+}
+
+.search-title {
+  text-align: center;
+  margin-top: 23px;
+  margin-bottom: 30px;
+}
+
+.form-depart {
+  float: left;
+  display: inline-block;
+  margin: 5px 5px 5px 5px;
+}
+
+.depart-input {
+  height: 35px;
+  width: 200px;
+  margin-top: 5px;
+}
+
+.form-zip {
+  float: right;
+  margin: 5px 5px 5px 5px;
+}
+
+.zip-input {
+  height: 35px;
+  width: 200px;
+  margin-top: 5px;
+  padding: 0px 1px 0px 1px;
+}
+
+.form-drive {
+  float: left;
+  clear: left;
+  margin-top: 18px;
+  margin-left: 5px;
+}
+
+.form-nights {
+  float: left;
+  margin-top: 18px;
+  margin-left: 40px;
+}
+
+#search-btn {
+  float: right;
+  clear: right;
+  height: 40px;
+  width: 200px;
+  margin-top: 22px;
+  margin-right: 6px;
+  background: rgb(197,212,202);
+  color: rgb(140,119,88);
+  /*background: rgb(140,119,88);*/
+  /*color: rgb(197,212,202);*/
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 1px 4px 0px #333;
+  font-size: 20px;
+}
+
+#map {
+  height: 500px;
+  width: 70%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lower {
+	background: rgb(140,119,88);
+  position: relative;
+  padding-bottom: 85px;
+	width: 100%;
+}
+
+label{
+	text-align: left;
+	display: inline-block;
+}
+
+input{
+	display: block;
+}
+
+.about {
+  background: rgb(197,212,202);
+  color: rgb(55,56,51);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+  width: 70%;
+  overflow: hidden;
+  padding: 25px;
+}
+
+.about img {
+  margin: 0px 35px 0px 0px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  float: left;
+}
+
+.about-text {
+  display: inline;
+}
+
+.about h3 {
+  font-size: 25px;
+  font-family: 'Lora', serif;
+}
+
+.about p {
+  font-size: 19px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about:last-child img {
+  float: right;
+  margin: 0px 0px 0px 35px;
+}
+
+.arrow-wrap {
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  top: -38px;
+  margin-left: -5em;
+  background: rgb(197,212,202);
+  width: 15px;
+  height: 15px;
+  padding: 30px 30px;
+  border-radius: 38px;
+  font-size: 0.5em;
+  display: block;
+  box-shadow: 0px 3px 10px 0px #333;
+}
+
+.arrow {
+  float:left;
+  position:absolute;
+  top: 30px;
+  left: 11px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: rgb(140,119,88) transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+.arrow:after {
+  content:'';
+  position:absolute;
+  top:-32px;
+  left:-27px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 3em 3em 0 3em;
+  border-color: rgb(197,212,202) transparent transparent transparent;
+  -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
+}
+
+.clear-fix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  background: rgb(129,163,163);
+  height: 25px;
+  margin: 0px;
+  padding: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(55,56,51);
+  font-size: 18px;
+}
+
