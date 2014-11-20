@@ -99,9 +99,17 @@ header h1 {
 
 .form-nights {
   float: left;
-  margin-top: 18px;
-  margin-left: 40px;
+  margin-top: 10px;
+  margin-left: 6px;
 }
+
+.form-nights-input option {
+  background: white;
+  height: 30px;
+  width: 88px;
+  margin-top: 5px;
+}
+
 
 #search-btn {
   float: right;
