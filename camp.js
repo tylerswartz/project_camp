@@ -33,6 +33,8 @@ $(document).ready(function() {
 		$.get("https://maps.googleapis.com/maps/api/geocode/json?address=" + zip + "&key=AIzaSyClJZW1Iy3jK7vRgH2lEJ0LxE6R3wyofmo", function(googleObject){
 			user_lat = (googleObject.results[0].geometry.location.lat);
 			user_lng = (googleObject.results[0].geometry.location.lng);		
+			$("#map").toggleClass("map-height");
+			window.location.hash = '#map';
 			callCampApi();
 		});
 		
