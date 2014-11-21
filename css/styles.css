@@ -128,14 +128,8 @@ header h1 {
   font-size: 20px;
 }
 
-/*#map {
-  width: 70%;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
-
-.map-height {
+#map {
+  display: none;
   height: 500px;
   width: 70%;
   margin-top: 30px;

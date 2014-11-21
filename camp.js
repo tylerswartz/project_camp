@@ -33,9 +33,17 @@ $(document).ready(function() {
 		$.get("https://maps.googleapis.com/maps/api/geocode/json?address=" + zip + "&key=AIzaSyClJZW1Iy3jK7vRgH2lEJ0LxE6R3wyofmo", function(googleObject){
 			user_lat = (googleObject.results[0].geometry.location.lat);
 			user_lng = (googleObject.results[0].geometry.location.lng);		
-			$("#map").toggleClass("map-height");
-			window.location.hash = '#map';
+			
+			//open map div
+			$( "#map" ).slideDown("slow");
+			
 			callCampApi();
+
+			//scroll to map div
+			$('html, body').animate({
+        scrollTop: $("#map").offset().top
+    	}, 2000);
+		
 		});
 		
 		return false;
