@@ -50,6 +50,11 @@ $(document).ready(function() {
 	});
 });
 
+// date picker
+$(function() {
+  $(".depart-input").datepicker({ minDate: 0, maxDate: "+6M" });
+});
+
 
 function callCampApi(){
 	//query api and convert from xml to json
