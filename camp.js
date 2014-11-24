@@ -9,7 +9,7 @@ var user_lat;
 var user_lng;
 
 $(document).ready(function() {
-		
+
 	$("form").submit(function(){
 		//take input data
 		date = ($(".depart-input").val());
@@ -47,7 +47,7 @@ function callCampApi(){
 	//query api and convert from xml to json
 	 	$.get("https://d9d20ed6-bb51eeb318dd.my.apitools.com/?landmarkName=true&landmarkLat="+ user_lat +"&landmarkLong="+ user_lng +"&siteType=2003&arvdate="+ date +"&lengthOfStay="+ nights + "&api_key=6gxhb929yg7ez8u3cr9mj9gj", function(response) { 	
 	  	results = $.xml2json(response);
-	  	for (var i=0; i < 10; i++){
+	  	for (var i=0; i < results.result.length; i++){
 	     	if (results.result[i].availabilityStatus === "Y") {
 	      	arr = [];
 	      	arr.push(results.result[i].facilityName);
@@ -59,7 +59,7 @@ function callCampApi(){
 
 	   //build map
 	   var map = new google.maps.Map($("#map")[0], {
-	    zoom: 8,
+	    zoom: 7,
 	    center: new google.maps.LatLng(user_lat, user_lng),
 	    mapTypeId: google.maps.MapTypeId.ROADMAP
 	   });
