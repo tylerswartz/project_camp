@@ -10,6 +10,12 @@ var user_lng;
 
 $(document).ready(function() {
 
+	$(".arrow-wrap").click(function(){
+		$('html, body').animate({
+      scrollTop: $(".about").offset().top
+    }, 1500);
+	});
+
 	$("#credits").click(function(){
 		$("#credit-dialog").slideDown("slow");
 		$('html, body').animate({

@@ -21,7 +21,7 @@ header h1 {
   color: rgb(197,212,202);
   font-size: 18px;
   margin-top: 16px;
-  padding-left: 9px;
+  padding-left: 16px;
   display: inline-block;
 }
 
@@ -39,6 +39,7 @@ header h1 {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  word-spacing: 5px;
   color: rgb(55,56,51);
   margin-top: 42px;
 }
@@ -153,7 +154,7 @@ input{
 }
 
 .about img {
-  margin: 0px 35px 0px 0px;
+  margin: 30px 35px 0px 0px;
   width: 200px;
   height: 200px;
   border-radius: 100px;
@@ -167,16 +168,28 @@ input{
 .about h3 {
   font-size: 25px;
   font-family: 'Lora', serif;
+  margin-left: 235px;
 }
 
 .about p {
-  font-size: 19px;
+  font-size: 18px;
   font-family: 'Open Sans', sans-serif;
+  line-height: 33px;
+  margin-left: 235px;
 }
 
 .about:last-child img {
   float: right;
-  margin: 0px 0px 0px 35px;
+  margin: 30px 0px 0px 35px;
+}
+
+.about:last-child h3 {
+  margin-left: 0px;
+}
+
+.about:last-child p {
+  margin-left: 0px;
+  margin-right: 235px;
 }
 
 .arrow-wrap {
@@ -235,6 +248,7 @@ input{
 #credit-dialog p {
   font-size: 12px;
   margin-left: 25px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #credit-dialog a {
@@ -243,10 +257,8 @@ input{
 }
 
 #credit-dialog img {
-  /*float: right;*/
   height: 20px;
   width: 20px;
-  /*margin-right: 25px;*/
   position: absolute;
   top: 5px;
   right: 10px;
@@ -261,7 +273,8 @@ footer {
   padding: 15px;
   font-family: 'Open Sans', sans-serif;
   color: rgb(55,56,51);
-  font-size: 18px;
+  font-size: 13px;
+  word-spacing: 14px;
 }
 
 footer a {
