@@ -221,6 +221,37 @@ input{
   -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
 }
 
+#credit-dialog {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  background: gray;
+
+}
+
+#credit-dialog p {
+  font-size: 12px;
+  margin-left: 25px;
+}
+
+#credit-dialog a {
+  text-decoration: none;
+  color: black;
+}
+
+#credit-dialog img {
+  /*float: right;*/
+  height: 20px;
+  width: 20px;
+  /*margin-right: 25px;*/
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
 footer {
   clear: both;
   position: relative;

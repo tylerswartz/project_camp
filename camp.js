@@ -10,6 +10,18 @@ var user_lng;
 
 $(document).ready(function() {
 
+	$("#credits").click(function(){
+		$("#credit-dialog").slideDown("slow");
+		$('html, body').animate({
+      scrollTop: $("#credit-dialog").offset().top
+    }, 2000);
+		$("#credit-dialog").removeClass("hidden");
+	});
+
+	$("#close-credits").click(function(){
+		$("#credit-dialog").slideUp("slow");
+	});
+
 	$("form").submit(function(){
 		//take input data
 		date = ($(".depart-input").val());
