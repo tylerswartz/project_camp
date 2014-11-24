@@ -1,5 +1,4 @@
 var camp;
-var date_input;
 var date;
 var nights;
 var results;
@@ -11,21 +10,9 @@ var user_lng;
 
 $(document).ready(function() {
 		
-	//change date format from 2014-11-19 to 11/19/2014	
-	function formatDate(p){
-		var dateAr = [];
-		dateAr = p.split('-');
-		var year = dateAr[0];
-		var month = dateAr[1];
-		var day = dateAr[2];
-		date = month + "/" + day + "/" + year;
-		return date;
-	};
-
 	$("form").submit(function(){
 		//take input data
-		date_input = ($(".depart-input").val());
-		date = formatDate(date_input);
+		date = ($(".depart-input").val());
 		nights = ($(".form-nights-input option:selected").text());
 		zip = ($(".zip-input").val());
 
