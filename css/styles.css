@@ -299,3 +299,21 @@ footer a {
 .hidden {
   display: none;
 }
+
+
+/**/
+/*RESPONSIVE STYLES*/
+/**/
+
+/*Smartphones*/
+@media (max-width: 480px) {
+
+}
+
+/*Tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+
+
