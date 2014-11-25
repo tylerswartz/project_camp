@@ -27,7 +27,8 @@ header h1 {
 
 .upper{
   font-family: 'Open Sans', sans-serif;
-	background-image: url("../images/plate39_hue.png");
+	background-image: url("../images/map-background3.png");
+  background-size: 100%;
   position: relative;
   height: auto;
   padding-top: 1px;
