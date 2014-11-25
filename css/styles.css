@@ -4,7 +4,8 @@ body{
 
 header {
   height: 55px;
-  background: rgb(140,119,88);
+  /*background: rgb(140,119,88);*/
+  background: rgb(161,150,134);
   margin-top: 0px;
 }
 
@@ -27,7 +28,7 @@ header h1 {
 
 .upper{
   font-family: 'Open Sans', sans-serif;
-	background-image: url("../images/map-background3.png");
+	background-image: url("../images/map-background6.png");
   background-size: 100%;
   position: relative;
   height: auto;
@@ -46,7 +47,8 @@ header h1 {
 }
 
 .search{
-  background: rgb(140,119,88);
+  /*background: rgb(140,119,88);*/
+  background: rgb(161,150,134);
   color: rgb(197,212,202);
   position: relative;
   width: 450px;
@@ -56,6 +58,7 @@ header h1 {
   margin-left: auto;
   margin-right: auto;
   padding: 20px 15px 20px 15px;
+  box-shadow: 0px 4px 10px 0px #333;
 }
 
 .search-title {
@@ -110,7 +113,7 @@ header h1 {
   margin-top: 22px;
   margin-right: 6px;
   background: rgb(197,212,202);
-  color: rgb(140,119,88);
+  color: rgb(161,150,134);
   border-radius: 5px;
   border: none;
   box-shadow: 0px 1px 4px 0px #333;
@@ -124,10 +127,12 @@ header h1 {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 4px 10px 0px #333;
 }
 
 .lower {
-	background: rgb(140,119,88);
+	/*background: rgb(140,119,88);*/
+  background: rgb(161,150,134);
   position: relative;
   padding-bottom: 85px;
 	width: 100%;
@@ -218,7 +223,7 @@ input{
   height: 0px;
   border-style: solid;
   border-width: 3em 3em 0 3em;
-  border-color: rgb(140,119,88) transparent transparent transparent;
+  border-color: rgb(161,150,134) transparent transparent transparent;
   -webkit-transform:rotate(360deg);/* added for better anti-aliasing on webkit browsers */
 }
 
@@ -242,8 +247,7 @@ input{
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
-  background: gray;
-
+  background: rgb(112,135,120);
 }
 
 #credit-dialog p {
