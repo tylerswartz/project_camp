@@ -17,12 +17,8 @@ $(document).ready(function() {
 	});
 
 	$("#credits").click(function(){
-		$("#credit-dialog").slideDown("slow");
-		$('html, body').animate({
-      scrollTop: $("#credit-dialog").offset().top
-    }, 2000);
-		$("#credit-dialog").removeClass("hidden");
-	});
+		$("#credit-dialog").toggle("slow");
+	})
 
 	$("#close-credits").click(function(){
 		$("#credit-dialog").slideUp("slow");
