@@ -12,7 +12,13 @@ $(document).ready(function() {
 
 	$(".arrow-wrap").click(function(){
 		$('html, body').animate({
-      scrollTop: $(".about").offset().top
+      scrollTop: $(".about").offset().top - 60
+    }, 1500);
+	});
+
+	$(".header").click(function(){
+		$('html, body').animate({
+      scrollTop: $(".upper").offset().top - 55
     }, 1500);
 	});
 
