@@ -51,7 +51,7 @@ $(document).ready(function() {
 
 			//scroll to map div
 			$('html, body').animate({
-        scrollTop: $("#map").offset().top
+        scrollTop: $("#map").offset().top - 55
     	}, 2000);
 		
 		});
