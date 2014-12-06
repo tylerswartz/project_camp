@@ -3,8 +3,12 @@ body{
 }
 
 header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+  border-bottom: 1px solid gray;
   height: 55px;
-  /*background: rgb(140,119,88);*/
   background: rgb(161,150,134);
   margin-top: 0px;
 }
@@ -27,6 +31,7 @@ header h1 {
 }
 
 .upper{
+  margin-top: 55px;
   font-family: 'Open Sans', sans-serif;
 	background-image: url("../images/map-background6.png");
   background-size: 100%;
